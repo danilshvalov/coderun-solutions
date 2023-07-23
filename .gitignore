@@ -1,1 +1,4 @@
 **/build/
+.markdown-preview.html
+CMakeUserPresets.json
+.project
