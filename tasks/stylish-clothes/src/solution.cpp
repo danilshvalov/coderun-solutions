@@ -43,6 +43,7 @@ std::vector<T> read_vector(std::istream& in = std::cin) {
     in >> size;
 
     std::vector<T> result;
+    result.reserve(size);
     for (size_t i = 0; i < size; ++i) {
         T value;
         in >> value;
