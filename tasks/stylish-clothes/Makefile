@@ -11,7 +11,7 @@ configure: conan
 	-DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
 	-DCMAKE_TOOLCHAIN_FILE=build/conan_toolchain.cmake
 
-build:
+build: configure
 	cmake --build build -j $(nproc)
 
 run: build
